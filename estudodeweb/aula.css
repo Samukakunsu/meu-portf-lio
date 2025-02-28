@@ -1,0 +1,206 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  
+}
+
+.filtro-borrado{
+    position: fixed;/*faz o fundo cobrir toda a tela*/
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: #d7dcdf80; /*fundo semi transparente*/
+    backdrop-filter: blur(10px);/*aplica o efeito borrado de esfoque*/
+    z-index: -1; /*mantem o fundo atras do conteudo*/
+}
+
+.bola{
+    position: absolute;
+    border-radius: 50%;
+    background: #d3dce6;
+    backdrop-filter: blur(100%);
+    z-index: -2;
+}
+
+.azul1{
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -10%;
+}
+
+.azul2{
+    width: 120px;
+    height: 120px;
+    bottom: 50%;
+    left: 10%;
+}
+
+.azul3{
+    width: 130px;
+    height: 130px;
+    bottom: 80%;
+    left: 90%;
+}
+
+.azul4{
+    width: 200px;
+    height: 200px;
+    bottom: 50px;
+    right: 94%;
+}
+
+.header-container{
+    background-color: #29425b;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px; /*distancia entre um botão e outro */
+    padding: 20px;
+    
+}
+
+.header-container button{
+    margin-right: 100px;
+
+}
+
+
+
+h1 {
+    background-color: #29425b;
+    color: white;
+    margin: 0px;
+    width: 100%;
+    text-align: left;
+}
+
+.anatec{
+    background-color:white;
+    width: 465px;/*largura da caixa cinza*/
+    padding: 18px;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 400px;
+    margin-left: 140px;
+    position: relative;
+    
+}
+
+
+
+
+
+.anatec ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100% ;
+    background-color: black;
+    z-index: -2;
+   
+}
+
+
+.anatec p{
+    color: #29425b;
+    margin-bottom: 50px;    
+}
+
+.anatec button{
+    background: linear-gradient(to right, #29425b, lightblue);
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+button{ 
+border-radius: 0.5rem;    /*deixar a borda do botão redonda*/
+background-color: #29425b;
+color: white;
+margin-right: 300px;
+font-family: Arial, Helvetica, sans-serif;
+white-space: nowrap;
+border: none;
+}
+.botaobranco{
+    background: white;
+    color: #29425b;
+    
+    
+}
+
+button:hover{
+
+    background-color: white;
+    color: #29425b;
+    cursor: pointer;
+} 
+
+.estilo img{
+position: absolute;
+margin-top: 50px;
+margin: right 50px; 
+background: none;
+width: 580px ;
+height: auto;
+margin-left: 20px;
+transform: scaleX(-1); /*fica invertido parado*/
+transition: transform 0.3s ease ;
+}
+
+.estilo img:hover{
+transform: scaleX(-1) scale(1.1); /*continua invertido quando passa o mouse*/
+
+}
+
+.introd{
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    left: 500px;
+    top: 118px;
+    
+}
+
+.introd button{
+    position: absolute;
+    top: 180px;
+    border-radius: 0.5rem;
+
+}
+
+.meubotao{
+    background: linear-gradient(to right, #29425b, lightblue);
+    color: white;
+    border: none;
+    padding: 6px 15px;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.introd p{
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #29425b;
+}
+
+.gradiente{
+    background: linear-gradient(to right, #29425b, lightblue);/*texto ficar azul escuro para claro*/
+    -webkit-background-clip: text;/*gradiente apenas no texto*/
+    -webkit-text-fill-color: transparent;/*deixa o fundo visivel e o texto "vazio"*/
+    font-size: 35px;/*ajusta o tamanho do titulo*/
+    font-weight: bold;/*deixa o titulo em negrito*/  
+}
+
